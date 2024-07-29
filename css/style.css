@@ -1,0 +1,18 @@
+.html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+} /*baza którą dodaję zawsze */
+
+.body {
+    max-width: 1000px;
+    padding: 2%;
+    margin: auto;
+    background-color: #eee;
+    font-family: "Lato", sans-serif;
+    line-height: 1.4;
+}
+
+

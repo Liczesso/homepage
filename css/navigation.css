@@ -1,0 +1,24 @@
+.nav {
+    list-style-type: none;
+}
+
+.navigation__link{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    background-color: cadetblue;
+    line-height: 1.8;
+
+}
+.navigation__link:visited {
+    color: gold;
+}
+
+.navigation__link:active {
+    color: black;
+}
+
+.navigation__link:hover {
+    background-color: brown;
+}
+

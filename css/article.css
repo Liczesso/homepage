@@ -1,0 +1,47 @@
+.article__section {
+    padding: 2%;
+    padding-top: 0%;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 7px 7px 5px 5px rgba(179, 135, 26, 0.429);
+}
+
+.article__section--background {
+    background-color: gold;
+}
+
+.article__teaser {
+    background-color:  rgba(179, 135, 26, 0.429);
+}
+
+.article__container {
+    overflow-x: auto;
+    margin-top: 3%;
+}
+
+.article__caption {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.article__table {
+    border-collapse: collapse;
+}
+
+.article__table--center {
+    text-align: center;
+}
+
+.article__row:nth-child(even) {
+    background-color: #ccc;
+    }
+
+.article__cell {
+    border: 2px solid #111;
+    padding: 1%;
+}
+
+.article__button {
+    margin-top: 3%;
+}
