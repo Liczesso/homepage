@@ -1,17 +1,20 @@
-console.log("Szukam współgraczy do planszówek");
+const welcome = () => {
+   console.log("Szukam współgraczy do planszówek");
+}
 
-let button = document.querySelector(".article__button");
+const togglePhoto = () => {
+   const photos = document.querySelectorAll(".js-article__photo");
 
-let photo = document.querySelector(".photo")
+   photos.forEach(photo => {
+      photo.classList.toggle("article__photo--hidden");
+   });
+};
 
+const init = () => {
+   const button = document.querySelector(".js-article__button");
+   button.addEventListener("click", togglePhoto);
 
+   welcome();
+};
 
-button.addEventListener("click", () => {
-   if (photo.innerHTML === '<img height="250" src="https://i.imgur.com/yygEUAd.jpeg" alt="dwa kwitnące kaktusy Echinopsis hybrid. Duże kwiaty, jeden różowy z żółtym środkiem, drugi pomarańczowy przechodzący w róż">') {
-      photo.innerHTML = '<img height="250" src="https://i.imgur.com/Ih3NnDn.jpeg" alt = "kwitnące kaktusy z rodzaju Lobivia na białym tle. Kilkanaście kwiatów, w kolorach: żółty, czerwony, różowy">';
-   } else {
-      photo.innerHTML = '<img height="250" src="https://i.imgur.com/yygEUAd.jpeg" alt = "dwa kwitnące kaktusy Echinopsis hybrid. Duże kwiaty, jeden różowy z żółtym środkiem, drugi pomarańczowy przechodzący w róż">';
-   }
-});
-
-console.log(button);
+init();

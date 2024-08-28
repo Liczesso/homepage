@@ -12,7 +12,7 @@
 }
 
 .article__teaser {
-    background-color:  rgba(179, 135, 26, 0.429);
+    background-color: rgba(179, 135, 26, 0.429);
 }
 
 .article__container {
@@ -35,7 +35,7 @@
 
 .article__row:nth-child(even) {
     background-color: #ccc;
-    }
+}
 
 .article__cell {
     border: 2px solid #111;
@@ -44,4 +44,8 @@
 
 .article__button {
     margin-top: 3%;
+}
+
+.article__photo--hidden {
+    display: none;
 }
